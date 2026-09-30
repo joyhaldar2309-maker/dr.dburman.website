@@ -1,20 +1,23 @@
-# Dr. D Burman — PWA
+# Dr. D Burman PWA — Fixed Install Button
 
-## Files
-- `index.html` — PWA-ready website
-- `manifest.webmanifest` — app metadata
-- `service-worker.js` — offline/app caching
-- `icons/icon-192.png` — app icon
-- `icons/icon-512.png` — app icon
+Upload these files to the root of the GitHub Pages repository:
 
-## Publish on GitHub Pages
-1. Create/open a GitHub repository.
-2. Upload **all files and the `icons` folder**.
-3. Keep `index.html` in the repository root.
-4. Go to **Settings → Pages**.
-5. Select **Deploy from a branch**, choose `main` and `/ (root)`, then Save.
-6. Open the generated HTTPS GitHub Pages URL on Android Chrome.
-7. Use **Install App** when it appears, or Chrome menu → **Add to Home screen / Install app**.
+- index.html
+- manifest.webmanifest
+- service-worker.js
+- favicon.png
+- icons/icon-192.png
+- icons/icon-512.png
 
-## Important
-PWA installation and service workers require HTTPS. GitHub Pages provides HTTPS automatically.
+After uploading:
+1. Wait for GitHub Pages to redeploy.
+2. Open the HTTPS GitHub Pages URL in Google Chrome on Android.
+3. Refresh the page.
+4. Tap **📲 Install App**.
+5. If Chrome has not exposed the install prompt yet, use **⋮ → Add to Home screen / Install app**.
+
+The install button now:
+- registers the service worker;
+- listens for the browser's install event;
+- shows a clear fallback message if the prompt is unavailable;
+- changes to **✅ App Installed** after installation.

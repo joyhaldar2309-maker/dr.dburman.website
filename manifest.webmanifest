@@ -4,13 +4,17 @@
   "description": "Dr. D Burman - Consultant Gynecologist & Infertility Specialist.",
   "lang": "en-IN",
   "dir": "ltr",
-  "start_url": "./index.html",
+  "start_url": "./",
   "scope": "./",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#ffffff",
   "theme_color": "#0f766e",
-  "categories": ["medical", "health", "lifestyle"],
+  "categories": [
+    "medical",
+    "health",
+    "lifestyle"
+  ],
   "icons": [
     {
       "src": "icons/icon-192.png",
@@ -24,5 +28,6 @@
       "type": "image/png",
       "purpose": "any maskable"
     }
-  ]
+  ],
+  "id": "./"
 }
